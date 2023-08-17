@@ -3,6 +3,7 @@ version: '3'
 services:
   wordpress_db:
     image: mysql:5.7
+    platform: linux/amd64
     volumes:
       - wordpress_db_data:/var/lib/mysql
     ports:
